@@ -1,10 +1,14 @@
 import React from 'react';
-import Card from './Card';
+import Card from '../Card/Card';
+import './Cards.css'
+// import styled from 'styled-components';
+
+
 
 export default function Cards(props) {
    const { characters } = props;
    return (
-   <div>
+   <div className="cards" >
      {characters.map((personajes) => (
       <Card 
 
@@ -13,7 +17,8 @@ export default function Cards(props) {
       species = {personajes.species}
       gender = {personajes.gender}
       image = {personajes.image}
-      onClose={() => window.alert('Emulamos que se cierra la card')}   
+      onClose={() => window.alert('Emulamos que se cierra la card')}
+     
 
       />
      ))}

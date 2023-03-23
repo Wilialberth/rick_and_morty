@@ -1,0 +1,21 @@
+.search{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.searchButton{
+    background-color: rgb(98, 94, 151);
+    color: whitesmoke;
+    border: solid black 1.5px;
+    cursor: pointer;
+    
+}
+
+.searchButton:hover{
+    background-color: azure;
+    color: black;
+    border-radius: 18%;
+}
