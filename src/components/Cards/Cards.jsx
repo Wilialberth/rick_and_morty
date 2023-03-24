@@ -1,6 +1,6 @@
 import React from 'react';
 import Card from '../Card/Card';
-import './Cards.css'
+import style from "./Cards.module.css"
 // import styled from 'styled-components';
 
 
@@ -8,7 +8,7 @@ import './Cards.css'
 export default function Cards(props) {
    const { characters } = props;
    return (
-   <div className="cards" >
+   <div className={style.cards} >
      {characters.map((personajes) => (
       <Card 
 

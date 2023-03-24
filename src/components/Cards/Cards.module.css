@@ -1,0 +1,7 @@
+.cards{ /*este código maneja las cards*/
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: inherit;
+    justify-content: space-evenly;
+}
