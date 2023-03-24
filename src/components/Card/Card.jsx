@@ -10,8 +10,9 @@ export default function Card(props) {
       <img src={props.image} alt="Image not found" />
          <div className={style.text} >
             <h2>{props.species}</h2>
-            <h2>{props.gender}</h2>
-         </div>              
+            <h2>{props.gender}</h2> 
+         </div>
+                  
    </div>
    );
 }

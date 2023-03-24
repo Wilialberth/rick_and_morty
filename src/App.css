@@ -1,7 +1,6 @@
 .App {
-   text-align: center;
-   background-image: url(https://hintergrundbild.org/wallpaper/full/8/4/f/5700-vertical-rick-and-morty-wallpapers-1920x1080-pictures.jpg);
+   text-align: center;   
+   background-image: url('./components/SearchBar/img1.jpg');
    background-attachment: fixed;
    background-size: cover;
-
 }

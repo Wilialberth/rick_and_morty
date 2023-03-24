@@ -7,20 +7,21 @@
 
 .divPpal{
     display: inline-block;
-    place-content: center;
-    
-   
+    place-content: center;  
     width: 25%;
     height: 100%;
-    background-color: rgb(7, 7, 49);
+    background-color: #070731;
     margin: 10px;
     padding: 10px;
     border-radius: 20px;
-    Box-shadow:  3px 6px 15px 4px  rgb(20, 9, 2);
-    outline: 4px solid blue;
-    color: green;
-    
-    
+    Box-shadow:  3px 6px 15px 4px  #140902;
+    outline: 4px solid #0000ff;
+    color: #008000;   
+}
+
+.divPpal:hover{
+    transform: scale(0.9);
+    transition-duration: 0.2s;
 }
    
 .x{
@@ -39,12 +40,17 @@
 .x:hover{
     transform: scale(0.6);
     transition-duration: 0.5s;
+    background: #d5d5e0;
 } 
 
 img{
     width: 100%;
+    border-radius: 10px;
 }
 .text{
     display: flex;
     justify-content: space-evenly;
+    text-shadow: 15%;
+    background-color: none;
+    border-radius: 15px;
 }
