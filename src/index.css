@@ -5,6 +5,11 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-image: url('./components/SearchBar/img1.jpg');
+  text-align: center;   
+   
+   background-attachment: fixed;
+   background-size: cover;
 }
 
 code {

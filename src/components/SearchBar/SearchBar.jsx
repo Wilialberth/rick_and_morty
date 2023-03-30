@@ -18,9 +18,13 @@ export default function SearchBar(props) {
 
 import { useState } from 'react';
 import style from './SearchBar.module.css';
+
+
 export default function SearchBar(props) {
    const { onSearch } = props;
    const [character, setCharacter] = useState('');
+
+   
    const handleChange = (e) => {
       setCharacter(e.target.value);
    }
