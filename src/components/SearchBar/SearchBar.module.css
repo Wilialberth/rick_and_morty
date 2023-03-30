@@ -1,32 +1,24 @@
 .search{
-    background-color: transparent;
-    margin-top: 10px;
-    width: -40vw;
-    height: 8vh;  
-}
-
-.input{
-
     width: 400px;
     padding: 12px 20px;
     margin-right: 10px;
-    border-radius: 5px;
+    border-radius: 200px;
     border: none;
     background-color: #f1f1f1;
 }
 
-.searchButton{
+.buttonSearch{
 
     background-color: #82a43a;
     color: white;
     border: none;
     padding: 12px 20px;
-    border-radius: 5px;
+    border-radius: 200px;
     cursor: pointer;
     font: Roboto;
 }
 
-.searchButton:hover{
+.buttonSearch:hover{
     background-color: #0000ff;
     border: 1.5px solid #008000
 }

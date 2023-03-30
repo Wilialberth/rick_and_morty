@@ -7,7 +7,7 @@ export default function Card(props) {
       <div className={style.divPpal} >
       <button className={style.x} onClick={props.onClose}>X</button>
       <h2> {props.name} </h2>
-      <img src={props.image} alt="Image not found" />
+      <img src={props.image} alt="Not found" />
          <div className={style.text} >
             <h2>{props.species}</h2>
             <h2>{props.gender}</h2> 
