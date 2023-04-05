@@ -16,7 +16,13 @@
     border-radius: 20px;
     /* Box-shadow:  3px 6px 15px 4px  #140902; */
     outline: 1px solid #0000ff;
-    color: #008000;   
+    color: #008000;  
+    
+}
+
+.divName{
+    color: #008000;
+    text-decoration: none; 
 }
 
 .divPpal:hover{

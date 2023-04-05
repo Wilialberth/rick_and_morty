@@ -1,13 +1,23 @@
 .nav{
-    background-color: transparent;
-    margin-top: 10px;
-    width: -40vw;
-    height: 8vh;  
-    padding-bottom: 15px;
-    color: aliceblue;
+    display: flex;
+    padding: 12px 20px;
+    align-items: center;
+    justify-content: center;
+    
+    background-color: rgb(24, 204, 195, 0.3);
+    
     /* display: flex;
     justify-content: space-between; */
 }
 .navAbout{
-    padding: 25px;   
+    padding: 12px 20px;   
+    color: whitesmoke;
+    cursor: pointer;
+    font: Roboto;
+}
+.navHome{
+    padding: 12px 20px;   
+    color: whitesmoke;  
+    cursor: pointer;
+    font: Roboto; 
 }
