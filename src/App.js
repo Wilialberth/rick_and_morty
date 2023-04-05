@@ -1,8 +1,11 @@
-import './App.css';
+import './App.css'
 import { useState } from 'react';
-import Cards from './components/Cards/Cards';
+import Cards from './components/Cards/Cards.jsx'
 import Nav from './components/Nav/Nav';
-
+import About from './components/About/About';
+import Detail from './components/Detail/Detail';
+import Error from './components/Error/Error';
+import { Route, Routes } from 'react-router-dom';
 
 
 function App () {
@@ -24,7 +27,34 @@ function App () {
     setCharacters(newCharacters);
   }
 
-return (
+
+
+  return (
+    <div className='App'>
+      <Nav onSearch={onSearch}/>
+      <Routes>
+        <Route
+          path='/home'
+          element={<Cards characters={characters} onClose={onClose}/>}
+        />
+        <Route 
+          path='/about'
+          element={<About/>}
+        />
+        <Route
+          path='/detail/:detailId'
+          element={<Detail/>}
+        />
+        <Route
+        path='*'
+        element={<Error/>}
+        />
+      </Routes>
+    </div>
+  )
+} 
+
+/* return (
   <div className='App'>
     <div>
       <Nav onSearch={onSearch}/>
@@ -35,9 +65,6 @@ return (
         />
       </div>
   </div>
-)
-}
-
-
+)} */
 
 export default App

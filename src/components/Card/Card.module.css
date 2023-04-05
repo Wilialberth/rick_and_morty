@@ -10,13 +10,12 @@
     place-content: center;  
     width: 25%;
     height: 100%;
-    background-color: #070731;
-    
+    background-color: rgb(7, 7, 49, 0.8);    
     margin: 10px;
     padding: 10px;
     border-radius: 20px;
-    Box-shadow:  3px 6px 15px 4px  #140902;
-    outline: 4px solid #0000ff;
+    /* Box-shadow:  3px 6px 15px 4px  #140902; */
+    outline: 1px solid #0000ff;
     color: #008000;   
 }
 
@@ -24,7 +23,7 @@
     transform: scale(0.9);
     transition-duration: 0.2s;
 }
-   
+  
 .x{
     width: 50px;
     background: white;
@@ -33,8 +32,7 @@
     padding: 10px;
     cursor: pointer;
     transition-duration: 0.5s;
-    border-radius: 20px;
-    
+    border-radius: 20px;  
     
 }
 

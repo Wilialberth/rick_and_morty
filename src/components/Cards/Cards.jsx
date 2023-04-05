@@ -11,17 +11,13 @@ export default function Cards(props) {
    <div className={style.cards} >
      {characters.map((personajes) => (
       <Card 
-
-      key = {personajes.id}
+      id = {personajes.id}
       name = {personajes.name}
       species = {personajes.species}
       gender = {personajes.gender}
       image = {personajes.image}
-      onClose={() => props.onClose(personajes.id)}    
-
-      />
-     ))}
+      onClose={() => props.onClose(personajes.id)}
+      />))}
    </div>
    );
 }
-

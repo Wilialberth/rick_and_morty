@@ -3,6 +3,11 @@
     margin-top: 10px;
     width: -40vw;
     height: 8vh;  
+    padding-bottom: 15px;
+    color: aliceblue;
     /* display: flex;
     justify-content: space-between; */
+}
+.navAbout{
+    padding: 25px;   
 }
