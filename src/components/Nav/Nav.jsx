@@ -3,14 +3,14 @@ import SearchBar from '../SearchBar/SearchBar';
 import style from './Nav.module.css'
 
 
-export default function Nav(props){
-    const { onSearch, logout } = props;
+export default function Nav({ onSearch, logout }){
+    
     return (
         <div className= {style.nav} >
             <Link to='/about'><span className= {style.navAbout}>About</span></Link>
             <Link to='/home'><span className= {style.navHome} >Home</span></Link>
             <SearchBar onSearch={onSearch}/>
-            <button onClick={logout}>LOGOUT</button>
+            <button className={style.logout} onClick={logout}>Logout</button>
         </div>
     );
 }
