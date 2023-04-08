@@ -1,15 +1,44 @@
 import './App.css'
-import { useState } from 'react';
-import Cards from './components/Cards/Cards.jsx'
+import { useState, useEffect } from 'react';
+import Cards from './components/Cards/Cards.jsx';
 import Nav from './components/Nav/Nav';
 import About from './components/About/About';
 import Detail from './components/Detail/Detail';
 import Error from './components/Error/Error';
-import { Route, Routes } from 'react-router-dom';
+import { Route, Routes, useLocation, useNavigate } from 'react-router-dom';
+import Form from './components/Form/Form'; 
 
 
 function App () {
   const [characters, setCharacters] = useState([]);
+  const {pathname} = useLocation();
+  const [access, setAccess] = useState(false);
+  const username = '7jimenez.w@gmail.com';
+  const password = '123456';
+  const navigate = useNavigate();
+
+  
+  useEffect(() => {
+    !access && navigate('/');
+  }, [access, navigate]);
+
+
+ /*  useEffect(() => {
+    !access && navigate('/');
+  }, [access]) */
+
+  function login (userData){
+      if (userData.username === username && userData.password === password) {
+        setAccess(true);
+        navigate ('/home');
+      }  
+  };
+
+  
+  function logout(){
+    setAccess(false);
+    navigate('/');
+  };
 
   function onSearch(character) {
     fetch(`https://rickandmortyapi.com/api/character/${character}`)
@@ -27,12 +56,15 @@ function App () {
     setCharacters(newCharacters);
   }
 
-
-
+ 
   return (
     <div className='App'>
-      <Nav onSearch={onSearch}/>
+      {pathname !== '/' && <Nav onSearch={onSearch} logout = {logout}/>}
       <Routes>
+        <Route
+          path='/'
+          element = {<Form login={login}/>}
+        />
         <Route
           path='/home'
           element={<Cards characters={characters} onClose={onClose}/>}
@@ -54,17 +86,6 @@ function App () {
   )
 } 
 
-/* return (
-  <div className='App'>
-    <div>
-      <Nav onSearch={onSearch}/>
-    </div>
-      <div>
-        <Cards
-          characters={characters} onClose={onClose}
-        />
-      </div>
-  </div>
-)} */
+
 
 export default App
