@@ -2,6 +2,8 @@ import { connect } from "react-redux";
 import { Link } from "react-router-dom";
 import Card from "../Card/Card";
 
+
+
 const Favorites = (props) => {
 
     const { myFavorites } = props;

@@ -21,6 +21,12 @@
     cursor: pointer;
     font: Roboto; 
 }
+.navFav{
+    padding: 12px 20px;   
+    color: whitesmoke;  
+    cursor: pointer;
+    font: Roboto; 
+}
 .logout{
     background-color: #82a43a;
     color: white;
