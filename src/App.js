@@ -7,6 +7,7 @@ import Detail from './components/Detail/Detail';
 import Error from './components/Error/Error';
 import { Route, Routes, useLocation, useNavigate } from 'react-router-dom';
 import Form from './components/Form/Form'; 
+import Favorites from './components/Favorites/Favorites';
 
 
 function App () {
@@ -73,6 +74,10 @@ function App () {
           path='/about'
           element={<About/>}
         />
+        <Route 
+          path='/favorites'
+          element={<Favorites/>}
+        />
         <Route
           path='/detail/:detailId'
           element={<Detail/>}
@@ -85,7 +90,4 @@ function App () {
     </div>
   )
 } 
-
-
-
 export default App
